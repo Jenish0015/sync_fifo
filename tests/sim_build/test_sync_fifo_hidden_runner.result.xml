@@ -1,0 +1,10 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1774705481" />
+    <testcase name="test_basic_write_read" classname="test_sync_fifo_hidden" file="/Users/jenishmurdia/Desktop/Phinity_labs/sync_fifo/tests/test_sync_fifo_hidden.py" lineno="10" time="0.0008699893951416016" sim_time_ns="215.0" ratio_time="247129.44916415456" />
+    <testcase name="test_full_and_overflow_guard" classname="test_sync_fifo_hidden" file="/Users/jenishmurdia/Desktop/Phinity_labs/sync_fifo/tests/test_sync_fifo_hidden.py" lineno="47" time="0.0006189346313476562" sim_time_ns="239.99999999999997" ratio_time="387763.08166409854" />
+    <testcase name="test_almost_full_flag" classname="test_sync_fifo_hidden" file="/Users/jenishmurdia/Desktop/Phinity_labs/sync_fifo/tests/test_sync_fifo_hidden.py" lineno="85" time="0.0004990100860595703" sim_time_ns="194.99999999999994" ratio_time="390773.66459627316" />
+    <testcase name="test_simultaneous_read_write" classname="test_sync_fifo_hidden" file="/Users/jenishmurdia/Desktop/Phinity_labs/sync_fifo/tests/test_sync_fifo_hidden.py" lineno="116" time="0.00039196014404296875" sim_time_ns="145.0" ratio_time="369935.57177615573" />
+    <testcase name="test_wr_count_accuracy" classname="test_sync_fifo_hidden" file="/Users/jenishmurdia/Desktop/Phinity_labs/sync_fifo/tests/test_sync_fifo_hidden.py" lineno="150" time="0.002156972885131836" sim_time_ns="834.9999999999999" ratio_time="387116.595556538" />
+  </testsuite>
+</testsuites>
