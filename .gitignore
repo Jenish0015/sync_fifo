@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 sim_build/
 .venv/
+
+# Local HUD template checkout (nested repo — do not submodule)
+tests/verilog-coding-template/
