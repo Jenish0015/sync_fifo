@@ -1,0 +1,13 @@
+[project]
+name = "sync-fifo"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "cocotb>=1.9.0",
+    "pytest>=7.0.0",
+    "cocotb-tools>=0.1.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
