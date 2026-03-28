@@ -1,23 +1,17 @@
 `timescale 1ns/1ps
-module sync_fifo #(
-    parameter DATA_WIDTH = 8,
-    parameter DEPTH      = 16
-) (
-    input  logic                  clk,
-    input  logic                  rst_n,
-    input  logic                  wr_en,
-    input  logic                  rd_en,
-    input  logic [DATA_WIDTH-1:0] wr_data,
-    output logic [DATA_WIDTH-1:0] rd_data,
-    output logic                  full,
-    output logic                  empty,
-    output logic                  almost_full,
-    output logic [$clog2(DEPTH):0] wr_count
+module fir_filter #(
+    parameter DATA_WIDTH  = 16,
+    parameter COEFF_WIDTH = 16,
+    parameter NUM_TAPS    = 8
+)(
+    input  logic                          clk,
+    input  logic                          rst_n,
+    input  logic                          valid_in,
+    input  logic signed [DATA_WIDTH-1:0]  data_in,
+    output logic                          valid_out,
+    output logic signed [DATA_WIDTH-1:0]  data_out
 );
-    localparam LOG2 = $clog2(DEPTH);
-
-    logic [DATA_WIDTH-1:0] mem [0:DEPTH-1];
-    logic [LOG2:0] wr_ptr, rd_ptr;
-
-    // Internal logic — to be completed
+    // Fixed coefficients (low-pass, symmetric)
+    // h = [12, 32, 64, 128, 128, 64, 32, 12]
+    // Complete the implementation
 endmodule

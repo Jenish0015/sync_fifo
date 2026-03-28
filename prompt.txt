@@ -1,0 +1,17 @@
+Complete the implementation of sources/sync_fifo.sv.
+
+The module is an 8-tap pipelined FIR filter with the following interface:
+  - clk, rst_n (active-low reset)
+  - valid_in: input sample valid strobe
+  - data_in: signed 16-bit input sample
+  - valid_out: output valid (asserts NUM_TAPS cycles after valid_in)
+  - data_out: signed 16-bit filtered output
+
+Fixed symmetric coefficients: h = [12, 32, 64, 128, 128, 64, 32, 12]
+
+Requirements:
+- Shift register holds last NUM_TAPS samples
+- Multiply-accumulate all taps every cycle when valid
+- Output must be correctly scaled (truncate to 16 bits after MAC)
+- valid_out must track valid_in with correct pipeline delay
+- All state resets to 0 on negedge rst_n
